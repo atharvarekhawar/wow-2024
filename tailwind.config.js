@@ -1,11 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-module.exports = {
-  daisyui: {
-    themes: ["light","dark","cmyk"]
-  }
-}
-
 
 export default {
   content: [
@@ -16,5 +10,8 @@ export default {
     extend: {},
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light","dark","cmyk"]
+  }
 }
 

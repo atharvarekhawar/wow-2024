@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import WeAreExpecting from './components/WeAreExpecting'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +9,9 @@ function App() {
   return (
     <>
     <div className=''>
-      hello guys
+
+      <WeAreExpecting/>
+
     </div>
     </>
   )
