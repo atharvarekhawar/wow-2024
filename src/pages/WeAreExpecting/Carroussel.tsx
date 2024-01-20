@@ -1,11 +1,10 @@
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
-import { v4 as uuidv4 } from "uuid";
 
 interface CardProps{
-  element: any;
-  index: uuidv4;
+  key: any;
+  content: JSX.Element;
 }
 
 interface CarrousselProps {
@@ -19,8 +18,8 @@ interface CarrousselProps {
 
 const Carroussel: React.FC<CarrousselProps> = ({cardsP,offset,showArrowsP,width,height,margin}) => {
 
-  const table = cardsP.map((element, index) => {
-    return { ...element, onClick: () => setGoToSlide(index) };
+  const table = cardsP.map(({content,key}) => {
+    return { ...content, onClick: () => setGoToSlide(key) };
   });
 
   const [offsetRadius, setOffsetRadius] = useState(2);
