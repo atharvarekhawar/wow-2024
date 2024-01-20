@@ -35,25 +35,16 @@ export default function WeAreExpecting() {
   return (
     <div className="w-[100vw] h-[100vh] bg-white">
 
-      {/* top left circle */}
+      {/* background shapes */}
       <img src="images/background/circle.svg" className="absolute top-[300px] left-[250px] h-5 w-5" />
-      {/* top left triangle */}
       <img src="images/background/triangle.svg" className="absolute top-[180px] left-[650px] h-7 w-7" />
-      {/* top right rectangle */}
       <img src="images/background/rectangle.svg" className="absolute top-[230px] left-[1200px] h-12 w-12" />
-
       <img src="images/background/rectangle.svg" className="absolute top-[230px] left-[1200px] h-12 w-12" />
-
       <img src="images/background/circle.svg" className="absolute top-[430px] left-[1550px] h-5 w-5" />
-
       <img src="images/background/triangle.svg" className="absolute top-[300px] left-[1700px] h-7 w-7" />
-
       <img src="images/background/rectangle.svg" className="absolute top-[600px] left-[300px] h-12 w-12" />
-
       <img src="images/background/triangle.svg" className="absolute top-[700px] left-[1700px] h-7 w-7" />
-
       <img src="images/background/circle.svg" className="absolute top-[1000px] left-[500px] h-5 w-5" />
-
       <img src="images/background/triangle.svg" className="absolute top-[1070px] left-[1200px] h-7 w-7" />
 
 
