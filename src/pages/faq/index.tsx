@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
+import { AiOutlinePlus, AiOutlineClose } from 'react-icons/ai';
 
 interface FaqData {
   question: string;
@@ -72,7 +72,7 @@ const Faq: React.FC = () => {
                   className='cursor-pointer ml-2 text-black'
                   onClick={() => handleToggle(index)}
                 >
-                  {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                  {isOpen ? <AiOutlineClose /> : <AiOutlinePlus />}
                 </span>
               </div>
               {isOpen && (
