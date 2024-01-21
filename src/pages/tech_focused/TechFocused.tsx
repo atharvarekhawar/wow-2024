@@ -1,4 +1,3 @@
-import React from 'react';
 
 
 
@@ -8,6 +7,16 @@ const TechFocused = () => {
     return (
         <div className="h-screen relative bg-white">
 
+            <img src="images/background/circle.svg" className="absolute top-[300px] left-[250px] h-5 w-5" />
+            <img src="images/background/triangle.svg" className="absolute top-[180px] left-[650px] h-7 w-7" />
+            <img src="images/background/rectangle.svg" className="absolute top-[230px] left-[1200px] h-12 w-12" />
+            <img src="images/background/rectangle.svg" className="absolute top-[230px] left-[1200px] h-12 w-12" />
+            <img src="images/background/circle.svg" className="absolute top-[430px] left-[1550px] h-5 w-5" />
+            <img src="images/background/triangle.svg" className="absolute top-[300px] left-[1700px] h-7 w-7" />
+            <img src="images/background/rectangle.svg" className="absolute top-[600px] left-[300px] h-12 w-12" />
+            <img src="images/background/triangle.svg" className="absolute top-[700px] left-[1700px] h-7 w-7" />
+            <img src="images/background/circle.svg" className="absolute top-[841px] left-[500px] h-5 w-5" />
+            <img src="images/background/triangle.svg" className="absolute top-[861px] left-[1200px] h-7 w-7" />
 
 
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
