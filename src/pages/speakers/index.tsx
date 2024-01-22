@@ -23,9 +23,9 @@ const index = () => {
                     </h1>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 shadow-md">
+                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXt19aed2asDKzVALfVDdbz0tIObw7jTrLQ&usqp=CAU" alt="photo" />
+                            <img className="object-center object-cover  eounded-full h-36 w-36" src="public/images/speakers/Speakerred.svg" alt="photo" />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
@@ -43,9 +43,9 @@ const index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 shadow-md">
+                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXt19aed2asDKzVALfVDdbz0tIObw7jTrLQ&usqp=CAU" alt="photo" />
+                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakergreen.svg" alt="photo" />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
@@ -62,9 +62,9 @@ const index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 shadow-md">
+                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXt19aed2asDKzVALfVDdbz0tIObw7jTrLQ&usqp=CAU" alt="photo" />
+                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakerblue.svg" alt="photo" />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
@@ -81,9 +81,9 @@ const index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 shadow-md">
+                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXt19aed2asDKzVALfVDdbz0tIObw7jTrLQ&usqp=CAU" alt="photo" />
+                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakeryellow.svg" alt="photo" />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
@@ -102,7 +102,7 @@ const index = () => {
                     </div>
                     <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXt19aed2asDKzVALfVDdbz0tIObw7jTrLQ&usqp=CAU" alt="photo" />
+                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakerred.svg" alt="photo" />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
@@ -119,9 +119,9 @@ const index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 shadow-md">
+                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
                         <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXt19aed2asDKzVALfVDdbz0tIObw7jTrLQ&usqp=CAU" alt="photo" />
+                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakerblue.svg" alt="photo" />
                         </div>
                         <div className="text-center">
                             <p className="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
