@@ -11,7 +11,7 @@ const Insights = () => {
         <FirstPartInSights/>
 
         {/* Content for the line */}
-        <div className="w-[4px] min-h-[718px] mt-2 p-2 bg-no-repeat bg-[url('images/insights/line.png')] hidden lg:block"></div>
+        <div className="w-[4px] min-h-[718px] mt-2 p-2 bg-no-repeat bg-[url('images/insights/line.png')] hidden lg:block "></div>
 
         {/* Content for the third box */}
         <SecondPartInsights />

@@ -22,6 +22,7 @@ function App() {
     <>
       <div className="w-[100vw] min-h-screen relative flex flex-col gap-20 overflow-x-hidden overflow-y-scroll ">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Navbar/>
         <WeAreExpecting />
         <Footer/>
@@ -31,6 +32,12 @@ function App() {
         <Insights/>
         {/* <Footer/> */}
 >>>>>>> 1af2f49 (FAQ page almost done & react-icon library not working)
+=======
+        <Navbar/>
+        <Faq />
+        <Insights/>
+        <Footer/>
+>>>>>>> a2e5ad4 (My final changes for pull request)
       </div>
     </>
   );
