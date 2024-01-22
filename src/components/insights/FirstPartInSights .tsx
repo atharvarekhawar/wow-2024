@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// I want another logic here but it also works 
 const FirstPartInSights = () => {
   const initialCounts = {
     interactions: 0,
@@ -27,16 +26,17 @@ const FirstPartInSights = () => {
   }, []);
 
   return (
-    <div className="flex flex-col border-2 border-gray-300 lg:flex-row lg:w-1/2">
-      <div className="mt-28 ml-16 mr-10 overflow-hidden max-h-110 max-w-96">
+    <div className="flex flex-col lg:flex-row lg:w-1/2 ">
+      <div className="mt-40 ml-16 mr-10 ">
+        {/* problem in responsiveness of the img  */}
         <img
           src="images/insights/mitclg.png"
           alt="MIT College Logo"
-          className="object-cover"
+          className="object-cover h-[364px] w-auto p-2 rounded-sm "
         />
       </div>
 
-      <div className="mt-6 lg:mt-40 text-center">
+      <div className="mt-6 lg:mt-40 text-center lg:ml-6">
         <ul className="list-none p-2 text-sm lg:text-base">
           <li className="mb-4 custom-stat">
             <h2 className="text-[#FF7A00] text-4xl lg:text-5xl transition-all duration-300 ease-in-out">{counts.interactions}</h2>
