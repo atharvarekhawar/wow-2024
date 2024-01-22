@@ -73,10 +73,10 @@ const SecondPartInsights: React.FC<SecondPartInsightsProps> = (props) => {
   }, [data]);
 
   return (
-    <div className="flex flex-col items-center justify-center  lg:w-[48%] sm:w-full mx-auto">
-      <h2 className="font-semibold mt-2 mb-2 text-[#545454] text-xl text-center">No of Attendees in WOW 2022</h2>
-      <div className="m-2 p-2  lg:w-[60%] sm:w-3/4">
-        <canvas id="myPieChart" className="w-full h-full" />
+    <div className="flex flex-col items-center justify-center mx-auto">
+      <h2 className="font-semibold mt-2 mb-2 text-[#545454] text-xl text-center ">No of Attendees in WOW 2022</h2>
+      <div className="m-2 p-2 ">
+        <canvas id="myPieChart" className="w-full h-full"  />
       </div>
     </div>
   );

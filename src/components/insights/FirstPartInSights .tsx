@@ -27,13 +27,13 @@ const FirstPartInSights = () => {
 
   return (
     <div className="flex flex-col lg:flex-row lg:w-1/2 ">
-      <div className="mt-40 ml-16 mr-10 ">
+      <div className="mt-10 ml-16 mr-10 sm:mt-10 xl:mt-40 ">
         {/* problem in responsiveness of the img  */}
         <img
           src="images/insights/mitclg.png"
           alt="MIT College Logo"
-          className="object-cover h-[364px] w-auto p-2 rounded-sm "
-        />
+          className="object-cover w-full h-auto px-2 rounded-sm max-w-[278px] max-h-[348px]"
+          />
       </div>
 
       <div className="mt-6 lg:mt-40 text-center lg:ml-6">
