@@ -18,19 +18,31 @@ interface CarrousselProps {
 
 const Carroussel: React.FC<CarrousselProps> = ({cardsP,offset,showArrowsP,width,height,margin}) => {
 
-  const table = cardsP.map(({content,key}) => {
-    return { ...content, onClick: () => setGoToSlide(key) };
+
+
+  const table = cardsP.map(({content,key}, index) => {
+    return { content, onClick: () => setGoToSlide(index), key };
   });
 
   const [offsetRadius, setOffsetRadius] = useState(2);
   const [showArrows, setShowArrows] = useState(false);
-  const [goToSlide, setGoToSlide] = useState(null);
+  const [goToSlide, setGoToSlide] = useState<number>(0);
   const [cards] = useState(table);
+
+
+  const changeSlides = ()=>{
+    setGoToSlide((prevIndex) => prevIndex+1)
+  }
 
   useEffect(() => {
     setOffsetRadius(offset);
     setShowArrows(showArrowsP);
   }, [offset, showArrowsP]);
+
+  useEffect(()=>{
+    const intervalId = setInterval(changeSlides,5000);
+    return () => clearInterval(intervalId);
+  },[])
 
   return (
     <div
