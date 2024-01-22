@@ -26,17 +26,17 @@ const FirstPartInSights = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div className="mt-6 lg:mt-0 lg:mr-6 text-center">
+    <div className="flex flex-col lg:flex-row lg:w-1/2 ">
+      <div className="mt-40 ml-16 mr-10 ">
         {/* problem in responsiveness of the img  */}
         <img
           src="images/insights/mitclg.png"
           alt="MIT College Logo"
-          className="object-cover h-[364px] sm:h-auto w-full p-2 rounded-sm"
+          className="object-cover h-[364px] w-auto p-2 rounded-sm "
         />
       </div>
 
-      <div className="mt-6 lg:mt-0 text-center">
+      <div className="mt-6 lg:mt-40 text-center lg:ml-6">
         <ul className="list-none p-2 text-sm lg:text-base">
           <li className="mb-4 custom-stat">
             <h2 className="text-[#FF7A00] text-4xl lg:text-5xl transition-all duration-300 ease-in-out">{counts.interactions}</h2>
