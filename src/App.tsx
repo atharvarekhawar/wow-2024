@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Faq from "./pages/faq";
 import Footer from "./pages/footer/index.tsx"
 import Navbar from "./pages/navbar/index.tsx";
@@ -10,6 +11,12 @@ import Speakers from "./pages/speakers/index.tsx"
 import Insights from "./pages/insights/index.tsx";
 //import Navbar from "./pages/navbar/index.tsx";
 >>>>>>> 6ee1c18 (working on insights page)
+=======
+import Faq from "./pages/faq";
+import Footer from "./pages/footer/index.tsx"
+import Insights from "./pages/insights/index.tsx";
+import Navbar from "./pages/navbar/index.tsx";
+>>>>>>> 4567bc7 (I done first part of insights part)
 function App() {
   return (
     <>
