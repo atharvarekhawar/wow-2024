@@ -5,9 +5,9 @@ import { useState } from "react";
 const Navbar = () => {
   const [selected,setSelected] = useState("");
   return (
-    <nav className="flex fixed w-full bg-white lg:p-0 z-50">
-      <div className="w-screen lg:w-[85%] flex flex-col items-center">
-        <div className="w-full flex items-center lg:justify-normal lg:py-[1.2%]">
+    <nav className="flex fixed w-full bg-white lg:p-0 z-50 ">
+      <div className="w-full flex flex-col items-center">
+        <div className="w-full flex items-center lg:justify-normal lg:py-[1%]">
           <div className="dropdown block lg:hidden">
             <div
               tabIndex={0}
@@ -189,7 +189,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hidden lg:flex">
-        <img src={pune} alt="pune" width={220} />
+        <img src={pune} style={{objectFit:"contain"}} alt="pune" width={230}  />
       </div>
     </nav>
   );

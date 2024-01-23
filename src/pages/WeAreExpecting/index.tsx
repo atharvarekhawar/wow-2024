@@ -56,7 +56,7 @@ export default function WeAreExpecting() {
       <img src="images/background/triangle.svg" className="absolute top-[810px] left-[1200px] h-5 w-5" />
 
 
-      <p className="md:text-4xl text-2xl text-center text-[#545454] mt-16 z-1">We are expecting...</p>
+      <p className="md:text-4xl text-2xl text-center text-[#545454]  z-1">We are expecting...</p>
 
       <div className="w-full flex items-center justify-center mt-14">
 
