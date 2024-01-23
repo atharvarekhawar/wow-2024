@@ -1,34 +1,31 @@
 import React, { useEffect } from 'react';
 import { Chart, TooltipOptions, LegendOptions } from 'chart.js/auto';
 
-const DATA_COUNT = 4; // Set the desired number of data points
 
-interface SecondPartInsightsProps {
-  
+//const DATA_COUNT = 4;  Set the desired number of data points
+
+const data = {
+  datasets: [
+    {
+      data: [24, 15, 8, 53], // Values based on the provided information
+      backgroundColor: ['#C7E7FF', '#B3DFFF', '#91D1FF', '#0D99FF'],
+    },
+  ],
+  labels: ['First Year', 'Second Year', 'Third Year', 'Final Year'],
+};
+
+function colorize(opaque: boolean, hover: boolean, ctx: any) {
+  const v = ctx.parsed;
+  const opacity = hover ? 1 - Math.abs(v / 150) - 0.2 : 1 - Math.abs(v / 150);
+
+  return opaque ? ctx.dataset.backgroundColor : Chart.helpers?.transparentize(ctx.dataset.backgroundColor, opacity);
 }
 
-const SecondPartInsights: React.FC<SecondPartInsightsProps> = (props) => {
-  const data = {
-    datasets: [
-      {
-        data: [24, 15, 8, 53], // Values based on the provided information
-        backgroundColor: ['#C7E7FF', '#B3DFFF', '#91D1FF', '#0D99FF'],
-      },
-    ],
-    labels: ['First Year', 'Second Year', 'Third Year', 'Final Year'],
-  };
+function hoverColorize(ctx: any) {
+  return colorize(false, true, ctx);
+}
 
-  function colorize(opaque: boolean, hover: boolean, ctx: any) {
-    const v = ctx.parsed;
-    const opacity = hover ? 1 - Math.abs(v / 150) - 0.2 : 1 - Math.abs(v / 150);
-
-    return opaque ? ctx.dataset.backgroundColor : Chart.helpers?.transparentize(ctx.dataset.backgroundColor, opacity);
-  }
-
-  function hoverColorize(ctx: any) {
-    return colorize(false, true, ctx);
-  }
-
+const SecondPartInsights: React.FC = () => {
   useEffect(() => {
     // Create and initialize the chart
     const ctx = document.getElementById('myPieChart') as HTMLCanvasElement | null;
@@ -70,7 +67,7 @@ const SecondPartInsights: React.FC<SecondPartInsightsProps> = (props) => {
         myPieChart.destroy();
       };
     }
-  }, [data]);
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center mx-auto">

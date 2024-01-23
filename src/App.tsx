@@ -10,7 +10,7 @@ import Index from "./pages/wow/index.tsx";
 function App() {
   return (
     <>
-      <div className="w-[100vw] min-h-screen relative flex flex-col overflow-x-hidden overflow-y-scroll ">
+      <div className=" min-h-screen relative flex flex-col overflow-x-hidden  ">
         <Navbar />
         <Index/>
         <WeAreExpecting/>
