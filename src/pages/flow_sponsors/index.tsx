@@ -1,4 +1,4 @@
-// YourComponent.tsx
+
 
 import React from 'react';
 
