@@ -7,7 +7,7 @@ import YouTube from "../../../public/images/footer/YouTube.png";
 
 const Footer = () => {
   return (
-    <footer className="w-full fixed bottom-0 bg-slate-200 text-black p-8">
+    <footer className="w-full  bottom-0 bg-slate-200 text-black p-8">
       <div className="flex flex-col lg:flex-row gap-6 items-center justify-between ">
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="mr-2" width={60} />

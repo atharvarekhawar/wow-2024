@@ -5,7 +5,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [selected,setSelected] = useState("");
   return (
-    <nav className="flex sticky w-full bg-white lg:p-0">
+    <nav className="flex fixed w-full bg-white lg:p-0 z-50">
       <div className="w-screen lg:w-[85%] flex flex-col items-center">
         <div className="w-full flex items-center lg:justify-normal lg:py-[1.2%]">
           <div className="dropdown block lg:hidden">
