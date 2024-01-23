@@ -3,7 +3,7 @@ import Footer from "./pages/footer/index.tsx"
 import Navbar from "./pages/navbar/index.tsx";
 import TechFocused from "./pages/tech_focused/TechFocused.tsx";
 import Speakers from "./pages/speakers/index.tsx"
-
+import FlowSponsors from "./pages/flow_sponsors/index.tsx";
 function App() {
   return (
     <>
@@ -12,7 +12,7 @@ function App() {
         <WeAreExpecting />
         <Speakers />
         <TechFocused />
-        
+        <FlowSponsors/>
         <Footer />
       </div>
     </>
