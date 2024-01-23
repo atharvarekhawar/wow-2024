@@ -1,5 +1,5 @@
 
-const index = () => {
+export default function Speakers() {
     return (
         <div className="bg-white h-screen relative overflow-hidden">
             <img src="images/background/circle.svg" className="absolute top-[300px] left-[250px] h-5 w-5" />
@@ -143,5 +143,3 @@ const index = () => {
         </div>
     )
 }
-
-export default index
