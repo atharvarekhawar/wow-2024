@@ -1,5 +1,6 @@
 import WeAreExpecting from "./pages/WeAreExpecting/index.tsx";
 import Faq from "./pages/faq";
+import FlowSponsors from "./pages/flow_sponsors/index.tsx";
 import Footer from "./pages/footer/index.tsx";
 import Insights from "./pages/insights/index.tsx";
 import Navbar from "./pages/navbar/index.tsx";
@@ -16,6 +17,7 @@ function App() {
         <WeAreExpecting/>
         <TechFocused/>
         <Speakers/>
+        <FlowSponsors/>
         <Faq />
         <Insights />
         <Footer />
