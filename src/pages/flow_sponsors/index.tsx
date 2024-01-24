@@ -91,7 +91,7 @@ const FlowSponsors: React.FC = () => {
     return (
         <>
 
-            <div className="w-full  bg-no-repeat bg-white bg-[url('images/flow_sponsors/background0.png')] xl:bg-[url('images/flow_sponsors/background1.png')]">
+            <div id='sponsors' className="w-full  bg-no-repeat bg-white bg-[url('images/flow_sponsors/background0.png')] xl:bg-[url('images/flow_sponsors/background1.png')]">
                 
                 <div className="w-[437] h-[150px]   flex items-center justify-center  ">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-black">

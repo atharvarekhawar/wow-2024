@@ -52,7 +52,7 @@ const Faq: React.FC = () => {
   const colors = ['#0F9D58', '#F4B400', '#4285F4', '#FD3630'];
 
   return (
-    <div className='w-full h-full p-5 bg-white flex flex-col items-center justify-center'>
+    <div id='faq' className='w-full h-full p-5 bg-white flex flex-col items-center justify-center'>
       <h2 className='font-semibold mb-4 text-[#000000] text-[64px]'>FAQ</h2>
       <div className='w-full max-w-[1254px]'>
         {faqData.map((item, index) => {
