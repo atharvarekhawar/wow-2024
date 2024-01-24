@@ -1,7 +1,7 @@
 
 export default function Speakers() {
     return (
-        <div className="bg-white  relative overflow-hidden">
+        <div id="speakers" className="bg-white  relative overflow-hidden">
             <img src="images/background/circle.svg" className="absolute top-[300px] left-[250px] h-5 w-5" />
             <img src="images/background/triangle.svg" className="absolute top-[180px] left-[650px] h-7 w-7" />
             <img src="images/background/rectangle.svg" className="absolute top-[230px] left-[1200px] h-12 w-12" />

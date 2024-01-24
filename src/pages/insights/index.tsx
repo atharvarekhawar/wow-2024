@@ -3,7 +3,7 @@ import SecondPartInsights from "../../components/insights/SecondPartInsights";
 
 const Insights = () => {
   return (
-    <div className="w-full h-full bg-no-repeat bg-cover bg-[url('images/insights/Insights_bg.png')]">
+    <div id="insights" className="w-full h-full bg-no-repeat bg-cover bg-[url('images/insights/Insights_bg.png')]">
       <h2 className="font-semibold mb-2 text-[#545454] text-6xl text-center">INSIGHTS</h2>
 
       <div className="flex flex-wrap">
