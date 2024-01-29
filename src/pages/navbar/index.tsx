@@ -6,8 +6,15 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [selected, setSelected] = useState("home");
   const [menuOpened, setMenuOpened] = useState(false);
+  window.addEventListener("scroll", ()=>{
+    if(document.getElementById("home")!.getBoundingClientRect().bottom<=0){
+      document.getElementById("navbar")!.classList.add("fixed");
+    } else {
+      document.getElementById("navbar")!.classList.remove("fixed");
+    }
+  })
   return (
-    <nav className="flex fixed w-full bg-white lg:p-0 z-50 ">
+    <nav id="navbar" className="flex w-full bg-white lg:p-0 z-50 ">
       <div className="w-full flex flex-col items-center">
         <div className="w-full h-full flex items-center lg:justify-normal">
           {/* Dropdown */}
