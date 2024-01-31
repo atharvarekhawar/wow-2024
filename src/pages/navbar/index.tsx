@@ -75,7 +75,7 @@ const Navbar = () => {
               </div>
 
               <div className="w-full flex flex-col gap-5">
-                <Link to="home" smooth={true} spy={true} offset={-50}>
+                <Link to="home" smooth={true} spy={true} offset={0}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "home" ? "text-black font-bold " : ""
@@ -88,7 +88,7 @@ const Navbar = () => {
                     Home
                   </div>
                 </Link>
-                <Link to="whywow" smooth={true} spy={true} offset={-50}>
+                <Link to="whywow" smooth={true} spy={true} offset={0}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "whywow" ? "text-black font-bold " : ""
@@ -201,7 +201,7 @@ const Navbar = () => {
           </div>
           {/* Desktop nav-links */}
           <div className="ml-10 hidden lg:flex space-x-7">
-            <Link to="home" smooth={true} spy={true} offset={-50}>
+            <Link to="home" smooth={true} spy={true} offset={0}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
                   selected === "home" ? "text-black font-bold " : ""
@@ -213,7 +213,7 @@ const Navbar = () => {
                 Home
               </div>
             </Link>
-            <Link to="whywow" smooth={true} spy={true} offset={-50}>
+            <Link to="whywow" smooth={true} spy={true} offset={0}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2 cursor-pointer hover:text-black ${
                   selected === "whywow" ? "text-black font-bold " : ""
