@@ -3,7 +3,7 @@ import Hero from "../../../public/images/wow/hero.png";
 
 function Index() {
   return (
-    <div id="whywow" className="w-[100vw] h-[100vh] bg-white mt-10 ">
+    <div id="whywow" className="w-[100vw] h-[100vh] bg-white">
       <p className="text-4xl text-center text-[#545454] mt-16 z-1 ">
         What is <img className="inline w-36" src={WOW} alt="WOW" /> ?
       </p>
