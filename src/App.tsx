@@ -8,18 +8,20 @@ import Navbar from "./pages/navbar/index.tsx";
 import Speakers from "./pages/speakers/index.tsx";
 import TechFocused from "./pages/tech_focused/TechFocused.tsx";
 import Index from "./pages/wow/index.tsx";
+import Map from "./pages/map/index.tsx";
 
 function App() {
   return (
     <>
       <div className=" min-h-screen relative flex flex-col overflow-x-hidden  ">
-        <Home/>
+        <Home />
         <Navbar />
-        <Index/>
-        <WeAreExpecting/>
-        <TechFocused/>
-        <Speakers/>
-        <FlowSponsors/>
+        <Index />
+        <WeAreExpecting />
+        <TechFocused />
+        <Speakers />
+        <FlowSponsors />
+        <Map />
         <Faq />
         <Insights />
         <Footer />
