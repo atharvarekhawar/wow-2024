@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { Chart, TooltipOptions, LegendOptions } from 'chart.js/auto';
 
-
 //const DATA_COUNT = 4;  Set the desired number of data points
+
+
 
 const data = {
   datasets: [
@@ -14,16 +15,16 @@ const data = {
   labels: ['First Year', 'Second Year', 'Third Year', 'Final Year'],
 };
 
-function colorize(opaque: boolean, hover: boolean, ctx: any) {
-  const v = ctx.parsed;
-  const opacity = hover ? 1 - Math.abs(v / 150) - 0.2 : 1 - Math.abs(v / 150);
+// function colorize(opaque: boolean, hover: boolean, ctx: any) {
+//   const v = ctx.parsed;
+//   const opacity = hover ? 1 - Math.abs(v / 150) - 0.2 : 1 - Math.abs(v / 150);
+//   // return ctx.dataset.backgroundColor
+//   return opaque ? ctx.dataset.backgroundColor : Chart.helpers?.transparentize(ctx.dataset.backgroundColor, opacity);
+// }
 
-  return opaque ? ctx.dataset.backgroundColor : Chart.helpers?.transparentize(ctx.dataset.backgroundColor, opacity);
-}
-
-function hoverColorize(ctx: any) {
-  return colorize(false, true, ctx);
-}
+// function hoverColorize(ctx: any) {
+//   return colorize(false, true, ctx);
+// }
 
 const SecondPartInsights: React.FC = () => {
   useEffect(() => {
@@ -52,12 +53,6 @@ const SecondPartInsights: React.FC = () => {
                 },
               },
             } as TooltipOptions<"pie">, // Type assertion for TypeScript
-          },
-          elements: {
-            arc: {
-              backgroundColor: colorize.bind(null, false, false),
-              hoverBackgroundColor: hoverColorize,
-            },
           },
         },
       });
