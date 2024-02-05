@@ -1,5 +1,3 @@
-import wow from "../../../public/images/navbar/nav-wow.svg";
-import pune from "../../../public/images/navbar/Logo.png";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -50,7 +48,7 @@ const Navbar = () => {
               }`}
             >
               <div className="w-full flex items-center justify-between">
-                <img src={wow} alt="WOW" width={100} />
+                <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} />
                 <div
                   className="rounded-full p-2 cursor-pointer hover:bg-rose-400"
                   onClick={() => {
@@ -197,7 +195,7 @@ const Navbar = () => {
           </div>
           {/* Wow image */}
           <div className="flex items-center ml-2">
-            <img src={wow} alt="WOW" width={100} />
+            <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} />
           </div>
           {/* Desktop nav-links */}
           <div className="ml-10 hidden lg:flex space-x-7">
@@ -321,7 +319,7 @@ const Navbar = () => {
 
       <div className="hidden lg:flex">
         <img
-          src={pune}
+          src="images/navbar/Logo.png"
           style={{ objectFit: "contain" }}
           alt="pune"
           width={230}

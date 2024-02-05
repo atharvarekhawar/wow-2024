@@ -18,7 +18,7 @@ function Index() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <img
-            src="public/images/map/map.svg"
+            src="images/map/map.svg"
             className="w-[1000px] rounded-2xl border-8 border-t-red-500 border-t-8 border-r-8 border-r-green-500 border-b-8 border-b-yellow-500 border-l-8 border-l-blue-500"
             alt="Map"
           />

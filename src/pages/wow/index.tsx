@@ -1,11 +1,8 @@
-import WOW from "../../../public/images/wow/WOW.jpg";
-import Hero from "../../../public/images/wow/hero.png";
-
 function Index() {
   return (
     <div id="whywow" className="w-[100vw] h-[100vh] bg-white">
       <p className="text-4xl text-center text-[#545454] mt-16 z-1 ">
-        What is <img className="inline w-36" src={WOW} alt="WOW" /> ?
+        What is <img className="inline w-36" src="images/wow/WOW.jpg" alt="WOW" /> ?
       </p>
       <div className="container mx-auto flex px-5 py-5 lg:py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -20,7 +17,7 @@ function Index() {
           </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img className="object-cover object-center " alt="hero" src={Hero} />
+          <img className="object-cover object-center " alt="hero" src="images/wow/hero.png" />
         </div>
       </div>
     </div>
