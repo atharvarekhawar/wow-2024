@@ -1,77 +1,19 @@
-import React, { useEffect } from 'react';
-import { Chart, TooltipOptions, LegendOptions } from 'chart.js/auto';
-
-//const DATA_COUNT = 4;  Set the desired number of data points
-
-
-
-const data = {
-  datasets: [
-    {
-      data: [24, 15, 8, 53], // Values based on the provided information
-      backgroundColor: ['#C7E7FF', '#B3DFFF', '#91D1FF', '#0D99FF'],
-    },
-  ],
-  labels: ['First Year', 'Second Year', 'Third Year', 'Final Year'],
-};
-
-// function colorize(opaque: boolean, hover: boolean, ctx: any) {
-//   const v = ctx.parsed;
-//   const opacity = hover ? 1 - Math.abs(v / 150) - 0.2 : 1 - Math.abs(v / 150);
-//   // return ctx.dataset.backgroundColor
-//   return opaque ? ctx.dataset.backgroundColor : Chart.helpers?.transparentize(ctx.dataset.backgroundColor, opacity);
-// }
-
-// function hoverColorize(ctx: any) {
-//   return colorize(false, true, ctx);
-// }
+import React from "react";
+import insightWow from "../../../public/images/insights/insights_wow.jpg";
+import insightImg from "../../../public/images/insights/insights_img.jpg";
 
 const SecondPartInsights: React.FC = () => {
-  useEffect(() => {
-    // Create and initialize the chart
-    const ctx = document.getElementById('myPieChart') as HTMLCanvasElement | null;
-    if (ctx) {
-      const myPieChart = new Chart(ctx, {
-        type: 'pie',
-        data: data,
-        options: {
-          plugins: {
-            legend: {
-              display: true, // Set the legend display option based on your needs
-            } as LegendOptions<"pie">, // Type assertion for TypeScript
-            tooltip: {
-              callbacks: {
-                label: (tooltipItem: any, data: any) => {
-                  const dataset = data.datasets?.[tooltipItem.datasetIndex];
-                  if (dataset) {
-                    const total = dataset.data.reduce((previousValue: number, currentValue: number) => previousValue + currentValue, 0);
-                    const currentValue = dataset.data[tooltipItem.index];
-                    const percentage = Math.round((currentValue / total) * 100);
-                    return `${data.labels[tooltipItem.index]}: ${currentValue} (${percentage}%)`;
-                  }
-                  return '';
-                },
-              },
-            } as TooltipOptions<"pie">, // Type assertion for TypeScript
-          },
-        },
-      });
-
-      // Cleanup on component unmount
-      return () => {
-        myPieChart.destroy();
-      };
-    }
-  }, []);
-
   return (
-    <div className="flex flex-col items-center justify-center mx-auto">
-      <h2 className="font-semibold mt-2 mb-2 text-[#545454] text-xl text-center ">No of Attendees in WOW 2022</h2>
-      <div className="m-2 p-2 ">
-        <canvas id="myPieChart" className="w-full h-full"  />
+    <div className="w-full lg:w-1/2 min-h-[500px] flex items-center justify-center p-5 ">
+      <div className="relative w-[500px] h-full flex items-center justify-end ">
+        <img
+          src={insightWow}
+          alt="wow"
+          className="absolute h-[250px] sm:h-[350px] top-1/2 right-1/2 transform translate-x-20 -translate-y-1/2 z-1"
+        />
+        <img src={insightImg} alt="insights" className="z-10 h-[350px] sm:h-[450px]" />
       </div>
     </div>
   );
-  
-  };
+};
 export default SecondPartInsights;

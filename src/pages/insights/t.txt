@@ -1,1 +1,0 @@
-The issue lies in responsiveness due to the Chart.js library, as it doesn't occupy the correct space.
