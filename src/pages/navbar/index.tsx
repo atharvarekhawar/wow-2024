@@ -164,7 +164,7 @@ const Navbar = () => {
                     Job portal
                   </div>
                 </Link> */}
-                <Link to="insights" smooth={true} spy={true} offset={-50}>
+                <Link to="insights" smooth={true} spy={true} offset={-80}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "insights" ? "text-black font-bold " : ""
@@ -194,11 +194,11 @@ const Navbar = () => {
             </div>
           </div>
           {/* Wow image */}
-          <div className="flex items-center ml-2">
-            <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} />
-          </div>
+          
+            <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} className="ml-[1rem] lg:ml-[5rem]" />
+          
           {/* Desktop nav-links */}
-          <div className="ml-10 hidden lg:flex space-x-7">
+          <div className="ml-10 hidden lg:flex space-x-5">
             <Link to="home" smooth={true} spy={true} offset={0}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
@@ -284,7 +284,7 @@ const Navbar = () => {
                     Job portal
                   </div>
                 </Link> */}
-            <Link to="insights" smooth={true} spy={true} offset={-50}>
+            <Link to="insights" smooth={true} spy={true} offset={-80}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
                   selected === "insights" ? "text-black font-bold " : ""
