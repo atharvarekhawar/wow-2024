@@ -13,26 +13,27 @@ export default function Speakers() {
             <img src="images/background/circle.svg" className="absolute top-[841px] left-[500px] h-5 w-5" />
             <img src="images/background/triangle.svg" className="absolute top-[861px] left-[1200px] h-7 w-7" />
 
-            <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-10 relative ">
+            <section className="max-w-6xl md:m-auto lg:m-auto px-4 lg:px-4 py-10 relative m-[2rem]">
+
                 <div className="text-center pb-12">
                     <h2 className="text-base font-bold text-indigo-600">
 
                     </h2>
-                    <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">
+                    <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 mb-[5rem]">
                         Speakers
                     </h1>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
-                        <div className="mb-8">
-                            <img className="object-center object-cover  eounded-full h-36 w-36" src="public/images/speakers/Speakerred.svg" alt="photo" />
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[8rem] sm:gap-16 md:gap-28 ">
+                    <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-red-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
+                        <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squarered.svg" alt="photo" />
                         </div>
-                        <div className="text-center">
+                        <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
-                            <p className="text-base text-gray-400 font-normal">Developer Relations Lead @Google India & MENA
-                            </p>
-                            <div className="flex flex-wrap justify-center gap-2 pt-2">
-                                <button className="bg-black-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                            <p className="text-base text-gray-400 font-normal">Developer Relations Lead @Google India & MENA</p>
+                            <div className="flex flex-wrap justify-center gap-2 pt-[1.5rem]">
+                                <button className="bg-black p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                                     <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" className="w-5 h-5 fill-current bg-white" alt="" />
                                 </button>
                                 <button className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
@@ -43,15 +44,16 @@ export default function Speakers() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakergreen.svg" alt="photo" />
+
+                    <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-green-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
+                        <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squaregreen.svg" alt="photo" />
                         </div>
-                        <div className="text-center">
-                            <p className="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-                            <p className="text-base text-gray-400 font-normal">Graphic Designer</p>
-                            <div className="flex flex-wrap justify-center gap-2 pt-2">
-                                <button className="bg-black-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                        <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
+                            <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
+                            <p className="text-base text-gray-400 font-normal">Developer Relations Lead @Google India & MENA</p>
+                            <div className="flex flex-wrap justify-center gap-2 pt-[1.5rem]">
+                                <button className="bg-black p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                                     <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" className="w-5 h-5 fill-current bg-white" alt="" />
                                 </button>
                                 <button className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
@@ -62,15 +64,16 @@ export default function Speakers() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakerblue.svg" alt="photo" />
+
+                    <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-blue-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
+                        <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squareblue.svg" alt="photo" />
                         </div>
-                        <div className="text-center">
-                            <p className="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-                            <p className="text-base text-gray-400 font-normal">Dev Ops</p>
-                            <div className="flex flex-wrap justify-center gap-2 pt-2">
-                                <button className="bg-black-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                        <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
+                            <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
+                            <p className="text-base text-gray-400 font-normal">Developer Relations Lead @Google India & MENA</p>
+                            <div className="flex flex-wrap justify-center gap-2 pt-[1.5rem]">
+                                <button className="bg-black p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                                     <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" className="w-5 h-5 fill-current bg-white" alt="" />
                                 </button>
                                 <button className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
@@ -81,15 +84,16 @@ export default function Speakers() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakeryellow.svg" alt="photo" />
+
+                    <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-blue-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
+                        <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squareblue.svg" alt="photo" />
                         </div>
-                        <div className="text-center">
-                            <p className="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
-                            <p className="text-base text-gray-400 font-normal">Software Engineer</p>
+                        <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
+                            <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
+                            <p className="text-base text-gray-400 font-normal">Developer Relations Lead @Google India & MENA</p>
                             <div className="flex flex-wrap justify-center gap-2 pt-2">
-                                <button className="bg-black-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                                <button className="bg-black p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                                     <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" className="w-5 h-5 fill-current bg-white" alt="" />
                                 </button>
                                 <button className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
@@ -100,15 +104,16 @@ export default function Speakers() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakerred.svg" alt="photo" />
+
+                    <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-red-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
+                        <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] ">
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10 " src="public/images/speakers/squarered.svg" alt="photo" />
                         </div>
-                        <div className="text-center">
-                            <p className="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-                            <p className="text-base text-gray-400 font-normal">Graphic Designer</p>
-                            <div className="flex flex-wrap justify-center gap-2 pt-2">
-                                <button className="bg-black-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                        <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
+                            <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
+                            <p className="text-base text-gray-400 font-normal">Developer Relations Lead @Google India & MENA</p>
+                            <div className="flex flex-wrap justify-center gap-2 pt-[1.5rem]">
+                                <button className="bg-black p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                                     <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" className="w-5 h-5 fill-current bg-white" alt="" />
                                 </button>
                                 <button className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
@@ -119,15 +124,16 @@ export default function Speakers() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center transition-transform transform hover:scale-105 ">
-                        <div className="mb-8">
-                            <img className="object-center object-cover rounded-full h-36 w-36" src="public/images/speakers/Speakerblue.svg" alt="photo" />
+
+                    <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-green-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
+                        <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squaregreen.svg" alt="photo" />
                         </div>
-                        <div className="text-center">
-                            <p className="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-                            <p className="text-base text-gray-400 font-normal">Dev Ops</p>
-                            <div className="flex flex-wrap justify-center gap-2 pt-2">
-                                <button className="bg-black-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+                        <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
+                            <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
+                            <p className="text-base text-gray-400 font-normal">Developer Relations Lead @Google India & MENA</p>
+                            <div className="flex flex-wrap justify-center gap-2 pt-[1.5rem]">
+                                <button className="bg-black p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
                                     <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" className="w-5 h-5 fill-current bg-white" alt="" />
                                 </button>
                                 <button className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
@@ -138,8 +144,9 @@ export default function Speakers() {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
-        </div>
+        </div >
     )
 }
