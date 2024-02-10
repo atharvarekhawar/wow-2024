@@ -5,7 +5,7 @@
 
 const TechFocused = () => {
     return (
-        <div className="h-screen relative bg-white">
+        <div className="min-h-screen relative bg-white">
 
             <img src="images/background/circle.svg" className="absolute top-[300px] left-[250px] h-5 w-5" />
             <img src="images/background/triangle.svg" className="absolute top-[180px] left-[650px] h-7 w-7" />
@@ -18,9 +18,11 @@ const TechFocused = () => {
             <img src="images/background/circle.svg" className="absolute top-[841px] left-[500px] h-5 w-5" />
             <img src="images/background/triangle.svg" className="absolute top-[861px] left-[1200px] h-7 w-7" />
 
+            <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-black mt-4 sm:mt-10">Tech-Focused</h1>
 
-            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-4 cursor-pointer">
+            <div className="flex flex-col md:flex-row justify-center items-center md:pt-[12.5rem] md:gap-x-[10rem] lg:mt-10  m-[2rem] sm:gap-y-3 ">
+                <p className="w-full md:w-[28rem] text-2xl text-[#545454] mr-0 md:mr-10">The sessions that span from technical to visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.</p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-4 md:mt-0">
                     <a href="https://developer.android.com/">
                         <img src="https://io.google/2022/app/images/android-logo.svg" className="object-contain" alt="Android" />
                     </a>
