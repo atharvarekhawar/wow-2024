@@ -91,7 +91,7 @@ const FlowSponsors: React.FC = () => {
     return (
         <>
 
-            <div id='sponsors' className="w-full  bg-no-repeat bg-white bg-[url('images/flow_sponsors/background0.png')] xl:bg-[url('images/flow_sponsors/background1.png')]">
+            <div id='schedule' className="w-full  bg-no-repeat bg-white bg-[url('images/flow_sponsors/background0.png')] xl:bg-[url('images/flow_sponsors/background1.png')]">
                 
                 <div className="w-[437] h-[150px]   flex items-center justify-center  ">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-black">
@@ -303,7 +303,7 @@ const FlowSponsors: React.FC = () => {
             </div>
 
             {/* Event Sponsors -------------------------------------- */}
-            <div className="bg-white bg-[url('images/flow_sponsors/background.jpeg')] ">
+            <div id="sponsors" className="bg-white bg-[url('images/flow_sponsors/background.jpeg')] ">
                 <div className="w-[437] h-[150px]  bg-white flex items-center justify-center  ">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-black">
                         Event Sponsors
@@ -344,7 +344,7 @@ const FlowSponsors: React.FC = () => {
                     </div>
                 </div>
                 {/* Hiring Partners -------------------------------------- */}
-                <div>
+                <div id="partners">
                     <div className="w-[437] h-[200px]  bg-white flex items-center justify-center ">
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-black">
                             Hiring Partners

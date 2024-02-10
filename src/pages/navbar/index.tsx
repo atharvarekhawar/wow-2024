@@ -1,13 +1,18 @@
-import wow from "../../../public/images/navbar/nav-wow.svg";
-import pune from "../../../public/images/navbar/Logo.png";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [selected, setSelected] = useState("home");
   const [menuOpened, setMenuOpened] = useState(false);
+  window.addEventListener("scroll", ()=>{
+    if(document.getElementById("home")!.getBoundingClientRect().bottom<=0){
+      document.getElementById("navbar")!.classList.add("fixed");
+    } else {
+      document.getElementById("navbar")!.classList.remove("fixed");
+    }
+  })
   return (
-    <nav className="flex fixed w-full bg-white lg:p-0 z-50 ">
+    <nav id="navbar" className="flex w-full bg-white lg:p-0 z-50 ">
       <div className="w-full flex flex-col items-center">
         <div className="w-full h-full flex items-center lg:justify-normal">
           {/* Dropdown */}
@@ -43,7 +48,7 @@ const Navbar = () => {
               }`}
             >
               <div className="w-full flex items-center justify-between">
-                <img src={wow} alt="WOW" width={100} />
+                <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} />
                 <div
                   className="rounded-full p-2 cursor-pointer hover:bg-rose-400"
                   onClick={() => {
@@ -68,7 +73,7 @@ const Navbar = () => {
               </div>
 
               <div className="w-full flex flex-col gap-5">
-                <Link to="home" smooth={true} spy={true} offset={-50}>
+                <Link to="home" smooth={true} spy={true} offset={0}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "home" ? "text-black font-bold " : ""
@@ -81,7 +86,7 @@ const Navbar = () => {
                     Home
                   </div>
                 </Link>
-                <Link to="whywow" smooth={true} spy={true} offset={-50}>
+                <Link to="whywow" smooth={true} spy={true} offset={0}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "whywow" ? "text-black font-bold " : ""
@@ -159,7 +164,7 @@ const Navbar = () => {
                     Job portal
                   </div>
                 </Link> */}
-                <Link to="insights" smooth={true} spy={true} offset={-50}>
+                <Link to="insights" smooth={true} spy={true} offset={-80}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "insights" ? "text-black font-bold " : ""
@@ -189,12 +194,12 @@ const Navbar = () => {
             </div>
           </div>
           {/* Wow image */}
-          <div className="flex items-center ml-2">
-            <img src={wow} alt="WOW" width={100} />
-          </div>
+          
+            <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} className="ml-[1rem] lg:ml-[5rem]" />
+          
           {/* Desktop nav-links */}
-          <div className="ml-10 hidden lg:flex space-x-7">
-            <Link to="home" smooth={true} spy={true} offset={-50}>
+          <div className="ml-10 hidden lg:flex space-x-5">
+            <Link to="home" smooth={true} spy={true} offset={0}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
                   selected === "home" ? "text-black font-bold " : ""
@@ -206,7 +211,7 @@ const Navbar = () => {
                 Home
               </div>
             </Link>
-            <Link to="whywow" smooth={true} spy={true} offset={-50}>
+            <Link to="whywow" smooth={true} spy={true} offset={0}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2 cursor-pointer hover:text-black ${
                   selected === "whywow" ? "text-black font-bold " : ""
@@ -279,7 +284,7 @@ const Navbar = () => {
                     Job portal
                   </div>
                 </Link> */}
-            <Link to="insights" smooth={true} spy={true} offset={-50}>
+            <Link to="insights" smooth={true} spy={true} offset={-80}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
                   selected === "insights" ? "text-black font-bold " : ""
@@ -314,7 +319,7 @@ const Navbar = () => {
 
       <div className="hidden lg:flex">
         <img
-          src={pune}
+          src="images/navbar/Logo.png"
           style={{ objectFit: "contain" }}
           alt="pune"
           width={230}
