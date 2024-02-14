@@ -27,7 +27,7 @@ export default function Speakers() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[8rem] sm:gap-16 md:gap-28 ">
                     <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-red-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
                         <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
-                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squarered.svg" alt="photo" />
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="/images/speakers/squarered.svg" alt="photo" />
                         </div>
                         <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
@@ -47,7 +47,7 @@ export default function Speakers() {
 
                     <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-green-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
                         <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
-                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squaregreen.svg" alt="photo" />
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="/images/speakers/squaregreen.svg" alt="photo" />
                         </div>
                         <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
@@ -67,7 +67,7 @@ export default function Speakers() {
 
                     <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-blue-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
                         <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
-                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squareblue.svg" alt="photo" />
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="/images/speakers/squareblue.svg" alt="photo" />
                         </div>
                         <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
@@ -87,7 +87,7 @@ export default function Speakers() {
 
                     <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-blue-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
                         <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
-                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squareblue.svg" alt="photo" />
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="/images/speakers/squareblue.svg" alt="photo" />
                         </div>
                         <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
@@ -107,7 +107,7 @@ export default function Speakers() {
 
                     <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-red-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
                         <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] ">
-                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10 " src="public/images/speakers/squarered.svg" alt="photo" />
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10 " src="/images/speakers/squarered.svg" alt="photo" />
                         </div>
                         <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>
@@ -127,7 +127,7 @@ export default function Speakers() {
 
                     <div className="w-full bg-white rounded-lg p-12 shadow-md shadow-green-500/50 flex flex-col justify-center items-center transition-transform transform hover:scale-105 relative">
                         <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-36 mt-[5rem] shadow-lg">
-                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="public/images/speakers/squaregreen.svg" alt="photo" />
+                            <img className=" object-center  object-cover h-36 w-36 border-slate-950 relative z-10" src="/images/speakers/squaregreen.svg" alt="photo" />
                         </div>
                         <div className="relative z-10 text-center pt-[2rem] mt-[2rem] sm:mt-[5rem] pb-[2rem]">
                             <p className="text-xl text-gray-700 font-bold mb-2">Kartik Padmanabhan</p>

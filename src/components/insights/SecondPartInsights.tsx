@@ -1,6 +1,6 @@
 import React from "react";
-import insightWow from "../../../public/images/insights/insights_wow.jpg";
-import insightImg from "../../../public/images/insights/insights_img.jpg";
+import insightWow from "/images/insights/insights_wow.jpg";
+import insightImg from "/images/insights/insights_img.jpg";
 
 const SecondPartInsights: React.FC = () => {
   return (

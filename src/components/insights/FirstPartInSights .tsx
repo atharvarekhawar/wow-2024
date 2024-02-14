@@ -1,4 +1,4 @@
-import blob from "../../../public/images/insights/insights_blob.svg"
+import blob from "/images/insights/insights_blob.svg"
 import Card from "./card";
 
 const FirstPartInSights = () => {
