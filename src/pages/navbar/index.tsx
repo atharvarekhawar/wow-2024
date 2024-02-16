@@ -132,7 +132,7 @@ const Navbar = () => {
                   </div>
                 </Link>
                 {/* Add more navigation links with Link */}
-                {/* <Link to="schedule" smooth={true} spy={true} offset={-50}>
+                <Link to="schedule" smooth={true} spy={true} offset={-50}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "schedule" ? "text-black font-bold " : ""
@@ -144,7 +144,7 @@ const Navbar = () => {
                   >
                     Schedule
                   </div>
-                </Link> */}
+                </Link>
                 <Link to="sponsors" smooth={true} spy={true} offset={-50}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "sponsors" ? "text-black font-bold " : ""
@@ -275,7 +275,7 @@ const Navbar = () => {
                 Speakers
               </div>
             </Link>
-            {/* <Link to="schedule" smooth={true} spy={true} offset={-50}>
+            <Link to="schedule" smooth={true} spy={true} offset={-50}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
                   selected === "schedule" ? "text-black font-bold " : ""
@@ -286,7 +286,7 @@ const Navbar = () => {
               >
                 Schedule
               </div>
-            </Link> */}
+            </Link>
             <Link to="sponsors" smooth={true} spy={true} offset={-50}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "sponsors" ? "text-black font-bold " : ""
