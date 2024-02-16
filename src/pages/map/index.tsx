@@ -1,3 +1,5 @@
+import './style.css'
+
 function Index() {
   return (
     <div
@@ -17,11 +19,16 @@ function Index() {
           </h1>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <img
-            src="images/map/map.svg"
-            className="w-[1000px] rounded-2xl border-8 border-t-red-500 border-t-8 border-r-8 border-r-green-500 border-b-8 border-b-yellow-500 border-l-8 border-l-blue-500"
-            alt="Map"
-          />
+
+        <div className="map-container">
+
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JCdVT4pfjpYyXMXhYSEq0WugSFVCOKs&ehbc=2E312F&noprof=1&z=11.9&ll=18.5453, 73.88898" width="840" height="500"     ></iframe>
+       
+          
+        </div>  
+
+        {/* style={{ borderRadius: '30px', border:'0'}}         */}
+
         </div>
       </div>
     </div>
