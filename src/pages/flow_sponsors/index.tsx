@@ -148,24 +148,27 @@ const FlowSponsors: React.FC = () => {
     const customBoxShadow = {
         boxShadow: '5px 5px 5px 5px #C4C4C4', // 3px offset, 3px blur, 3px spread, 10px size, gray color
     };
+    const eventflowBoxShadow = {
+        boxShadow: '5px 5px 5px 5px #C4C4C4', // 3px offset, 3px blur, 3px spread, 10px size, gray color
+    };
     const colors = ['#FF0000', '#0F9D58', '#4285F4', '#F6C02A'];
     return (
         <>
          <div className='bg-white'>
             <div className="text-center bg-ecf0f3">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold" style={{ color: 'black' }}>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold" style={{ color: 'black' }}>
                     Event Flow
                 </h1>
             </div>
-            <div>
+            <div className='m-3'>
                 {scheduleData.map((event, index) => (
                     <div key={index} className="md:w-[1160px] h-[90px] m-auto flex items-center justify-between mt-[30px]">
                         {/* Time slot container */}
-                        <div className="h-[90px] w-[100px] flex items-center justify-center md:w-[334px] sm:w-[150px] bg-gray-400 rounded-md x text-[12px] md:text-lg" style={{ color: 'black', backgroundColor: '#ECF0F3' }}>
+                        <div className="h-[90px] w-[100px]  flex items-center justify-center md:w-[334px]  sm:w-[150px] shadow-lg shadow-black-500/40 bg-gray-400 rounded-md x text-[12px] md:text-lg" style={{ color: 'black', backgroundColor: '#ECF0F3' }}>
                             {event.time}
                         </div>
                         {/* Information container */}
-                        <div className="h-[90px] w-[250px]  pt-[10px] md:w-[806px] pl-[85px] sm:w-[700px] text-black rounded-md x" style={{ borderLeft: `6px solid ${colors[index % colors.length]}`, backgroundColor: '#ECF0F3', }}>
+                        <div className="h-[90px] w-[250px]   pt-[10px] md:w-[806px] pl-[85px] shadow-lg shadow-black-500/40 sm:w-[700px] text-black rounded-md x" style={{ borderLeft: `6px solid ${colors[index % colors.length]}`, backgroundColor: '#ECF0F3'}} >
                             <h4 className="text-lg md:text-xl lg:text-2xl xl:text-3xl">{event.heading}</h4>
                             <p className="text-base md:text-lg lg:text-xl xl:text-2xl">{event.paragraph}</p>
                         </div>
@@ -174,7 +177,7 @@ const FlowSponsors: React.FC = () => {
             </div>
         </div>
             
-
+<div></div>
             {/* Event Sponsors -------------------------------------- */}
             <div id="sponsors" className="bg-white bg-[url('images/flow_sponsors/background.jpeg')] ">
                 <div className="w-[437] h-[150px]  bg-white flex items-center justify-center  ">
@@ -242,7 +245,7 @@ const FlowSponsors: React.FC = () => {
 
                 {/* ----------------------------             REAMAINING SECTION---------------------------------------------------------------- */}
 
-                <div className="w-full mt-2 flex flex-wrap justify-evenly bg-white text-black bg-no-repeat  bg-[url('images/flow_sponsors/background1.png')] ">
+                <div className="w-full mt-2 flex flex-wrap justify-evenly bg-white text-black bg-no-repeat  bg-[url('images/flow_sponsors/background.png')] ">
                     {partnersData.partners.map((partner, index) => (
                         <div key={index} className="w-[600px] mt-[100px]  ">
                             <h1 className="h-[112px] text-[25px] text-center whitespace-normal font-bold text-20px">{partner.category}</h1>
