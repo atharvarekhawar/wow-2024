@@ -3,7 +3,7 @@ import './style.css'
 function Index() {
   return (
     <div
-      id="faq"
+      id="map"
       className="w-full h-full bg-white flex flex-col items-center justify-center"
     >
       <div className="container px-5 py-24 mx-auto">

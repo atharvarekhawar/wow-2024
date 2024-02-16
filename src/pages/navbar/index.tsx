@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [selected, setSelected] = useState("home");
   const [menuOpened, setMenuOpened] = useState(false);
-  window.addEventListener("scroll", ()=>{
-    if(document.getElementById("home")!.getBoundingClientRect().bottom<=0){
-      document.getElementById("navbar")!.classList.add("fixed");
-    } else {
-      document.getElementById("navbar")!.classList.remove("fixed");
-    }
-  })
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const homeElement = document.getElementById("home");
+      const navbarElement = document.getElementById("navbar");
+      if (homeElement && navbarElement) {
+        if (homeElement.getBoundingClientRect().bottom <= 0) {
+          navbarElement.classList.add("fixed");
+        } else {
+          navbarElement.classList.remove("fixed");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav id="navbar" className="flex w-full bg-white lg:p-0 z-50 ">
       <div className="w-full flex flex-col items-center">
@@ -43,9 +54,8 @@ const Navbar = () => {
             </div>
             {/* Mobile nav-links */}
             <div
-              className={`absolute top-0 right-0 w-full bg-white h-screen flex flex-col gap-10 p-5  ${
-                !menuOpened ? "hidden" : ""
-              }`}
+              className={`absolute top-0 right-0 w-full bg-white h-screen flex flex-col gap-10 p-5  ${!menuOpened ? "hidden" : ""
+                }`}
             >
               <div className="w-full flex items-center justify-between">
                 <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} />
@@ -75,9 +85,8 @@ const Navbar = () => {
               <div className="w-full flex flex-col gap-5">
                 <Link to="home" smooth={true} spy={true} offset={0}>
                   <div
-                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
-                      selected === "home" ? "text-black font-bold " : ""
-                    }`}
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "home" ? "text-black font-bold " : ""
+                      }`}
                     onClick={() => {
                       setSelected("home");
                       setMenuOpened(false);
@@ -88,9 +97,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="whywow" smooth={true} spy={true} offset={0}>
                   <div
-                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
-                      selected === "whywow" ? "text-black font-bold " : ""
-                    }`}
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "whywow" ? "text-black font-bold " : ""
+                      }`}
                     onClick={() => {
                       setSelected("whywow");
                       setMenuOpened(false);
@@ -99,11 +107,22 @@ const Navbar = () => {
                     Why WOW
                   </div>
                 </Link>
+                <Link to="techfocused" smooth={true} spy={true} offset={-50}>
+                  <div
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "speakers" ? "text-black font-bold " : ""
+                      }`}
+                    onClick={() => {
+                      setSelected("techfocused");
+                      setMenuOpened(false);
+                    }}
+                  >
+                    Techfocused
+                  </div>
+                </Link>
                 <Link to="speakers" smooth={true} spy={true} offset={-50}>
                   <div
-                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
-                      selected === "speakers" ? "text-black font-bold " : ""
-                    }`}
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "speakers" ? "text-black font-bold " : ""
+                      }`}
                     onClick={() => {
                       setSelected("speakers");
                       setMenuOpened(false);
@@ -112,7 +131,8 @@ const Navbar = () => {
                     Speakers
                   </div>
                 </Link>
-                <Link to="schedule" smooth={true} spy={true} offset={-50}>
+                {/* Add more navigation links with Link */}
+                {/* <Link to="schedule" smooth={true} spy={true} offset={-50}>
                   <div
                     className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
                       selected === "schedule" ? "text-black font-bold " : ""
@@ -124,12 +144,11 @@ const Navbar = () => {
                   >
                     Schedule
                   </div>
-                </Link>
+                </Link> */}
                 <Link to="sponsors" smooth={true} spy={true} offset={-50}>
                   <div
-                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
-                      selected === "sponsors" ? "text-black font-bold " : ""
-                    }`}
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "sponsors" ? "text-black font-bold " : ""
+                      }`}
                     onClick={() => {
                       setSelected("sponsors");
                       setMenuOpened(false);
@@ -140,9 +159,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="partners" smooth={true} spy={true} offset={-50}>
                   <div
-                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
-                      selected === "partners" ? "text-black font-bold " : ""
-                    }`}
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "partners" ? "text-black font-bold " : ""
+                      }`}
                     onClick={() => {
                       setSelected("partners");
                       setMenuOpened(false);
@@ -164,11 +182,23 @@ const Navbar = () => {
                     Job portal
                   </div>
                 </Link> */}
+
+                <Link to="map" smooth={true} spy={true} offset={-80}>
+                  <div
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "insights" ? "text-black font-bold " : ""
+                      }`}
+                    onClick={() => {
+                      setSelected("map");
+                      setMenuOpened(false);
+                    }}
+                  >
+                    Colleges
+                  </div>
+                </Link>
                 <Link to="insights" smooth={true} spy={true} offset={-80}>
                   <div
-                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
-                      selected === "insights" ? "text-black font-bold " : ""
-                    }`}
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "insights" ? "text-black font-bold " : ""
+                      }`}
                     onClick={() => {
                       setSelected("insights");
                       setMenuOpened(false);
@@ -179,9 +209,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="faq" smooth={true} spy={true} offset={-50}>
                   <div
-                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${
-                      selected === "faq" ? "text-black font-bold " : ""
-                    }`}
+                    className={`text-[#545454] font-semibold text-xl p-2 border-b cursor-pointer hover:text-black ${selected === "faq" ? "text-black font-bold " : ""
+                      }`}
                     onClick={() => {
                       setSelected("faq");
                       setMenuOpened(false);
@@ -194,16 +223,18 @@ const Navbar = () => {
             </div>
           </div>
           {/* Wow image */}
-          
-            <img src="images/navbar/nav-wow.svg" alt="WOW" width={100} className="ml-[1rem] lg:ml-[5rem]" />
-          
+          <img
+            src="images/navbar/nav-wow.svg"
+            alt="WOW"
+            width={100}
+            className="ml-[1rem] lg:ml-[5rem]"
+          />
           {/* Desktop nav-links */}
           <div className="ml-10 hidden lg:flex space-x-5">
             <Link to="home" smooth={true} spy={true} offset={0}>
               <div
-                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
-                  selected === "home" ? "text-black font-bold " : ""
-                }`}
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "home" ? "text-black font-bold " : ""
+                  }`}
                 onClick={() => {
                   setSelected("home");
                 }}
@@ -213,9 +244,8 @@ const Navbar = () => {
             </Link>
             <Link to="whywow" smooth={true} spy={true} offset={0}>
               <div
-                className={`text-[#545454] font-semibold text-base p-2 cursor-pointer hover:text-black ${
-                  selected === "whywow" ? "text-black font-bold " : ""
-                }`}
+                className={`text-[#545454] font-semibold text-base p-2 cursor-pointer hover:text-black ${selected === "whywow" ? "text-black font-bold " : ""
+                  }`}
                 onClick={() => {
                   setSelected("whywow");
                 }}
@@ -223,11 +253,21 @@ const Navbar = () => {
                 Why WOW
               </div>
             </Link>
+            <Link to="techfocused" smooth={true} spy={true} offset={-50}>
+              <div
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "techfocused" ? "text-black font-bold " : ""
+                  }`}
+                onClick={() => {
+                  setSelected("techfocused");
+                }}
+              >
+                TechFoused
+              </div>
+            </Link>
             <Link to="speakers" smooth={true} spy={true} offset={-50}>
               <div
-                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
-                  selected === "speakers" ? "text-black font-bold " : ""
-                }`}
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "speakers" ? "text-black font-bold " : ""
+                  }`}
                 onClick={() => {
                   setSelected("speakers");
                 }}
@@ -235,7 +275,7 @@ const Navbar = () => {
                 Speakers
               </div>
             </Link>
-            <Link to="schedule" smooth={true} spy={true} offset={-50}>
+            {/* <Link to="schedule" smooth={true} spy={true} offset={-50}>
               <div
                 className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
                   selected === "schedule" ? "text-black font-bold " : ""
@@ -246,12 +286,11 @@ const Navbar = () => {
               >
                 Schedule
               </div>
-            </Link>
+            </Link> */}
             <Link to="sponsors" smooth={true} spy={true} offset={-50}>
               <div
-                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
-                  selected === "sponsors" ? "text-black font-bold " : ""
-                }`}
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "sponsors" ? "text-black font-bold " : ""
+                  }`}
                 onClick={() => {
                   setSelected("sponsors");
                 }}
@@ -261,9 +300,8 @@ const Navbar = () => {
             </Link>
             <Link to="partners" smooth={true} spy={true} offset={-50}>
               <div
-                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
-                  selected === "partners" ? "text-black font-bold " : ""
-                }`}
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "partners" ? "text-black font-bold " : ""
+                  }`}
                 onClick={() => {
                   setSelected("partners");
                 }}
@@ -278,17 +316,27 @@ const Navbar = () => {
                     }`}
                     onClick={() => {
                       setSelected("jobportal");
-                      
                     }}
                   >
                     Job portal
                   </div>
                 </Link> */}
+            <Link to="map" smooth={true} spy={true} offset={-50}>
+              <div
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "faq" ? "text-black font-bold " : ""
+                  }`}
+                onClick={() => {
+                  setSelected("map");
+                }}
+              >
+                Colleges
+              </div>
+            </Link>
+
             <Link to="insights" smooth={true} spy={true} offset={-80}>
               <div
-                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
-                  selected === "insights" ? "text-black font-bold " : ""
-                }`}
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "insights" ? "text-black font-bold " : ""
+                  }`}
                 onClick={() => {
                   setSelected("insights");
                 }}
@@ -298,9 +346,8 @@ const Navbar = () => {
             </Link>
             <Link to="faq" smooth={true} spy={true} offset={-50}>
               <div
-                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${
-                  selected === "faq" ? "text-black font-bold " : ""
-                }`}
+                className={`text-[#545454] font-semibold text-base p-2  cursor-pointer hover:text-black ${selected === "faq" ? "text-black font-bold " : ""
+                  }`}
                 onClick={() => {
                   setSelected("faq");
                 }}

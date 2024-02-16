@@ -7,8 +7,8 @@ import Insights from "./pages/insights/index.tsx";
 import Navbar from "./pages/navbar/index.tsx";
 import Speakers from "./pages/speakers/index.tsx";
 import TechFocused from "./pages/tech_focused/TechFocused.tsx";
-import Index from "./pages/wow/index.tsx";
 import Map from "./pages/map/index.tsx";
+import Whywow from "./pages/wow/index.tsx";
 
 function App() {
   return (
@@ -16,14 +16,14 @@ function App() {
       <div className=" min-h-screen relative flex flex-col overflow-x-hidden  ">
         <Home />
         <Navbar />
-        <Index />
+        <Whywow />
         <WeAreExpecting />
         <TechFocused />
         <Speakers />
         <FlowSponsors />
         <Map />
-        <Faq />
         <Insights />
+        <Faq />
         <Footer />
       </div>
     </>

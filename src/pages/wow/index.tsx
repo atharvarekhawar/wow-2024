@@ -1,4 +1,4 @@
-function Index() {
+function Whywow() {
   return (
     <div id="whywow" className="w-[100vw] h-max bg-white pt-16">
       <p className="text-5xl text-center text-[#545454] mt-16 z-1 flex  justify-center items-center">
@@ -28,4 +28,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Whywow;
