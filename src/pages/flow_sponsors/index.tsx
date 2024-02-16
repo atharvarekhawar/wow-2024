@@ -143,7 +143,7 @@ const FlowSponsors: React.FC = () => {
         
         
     ];
-    const event: EventData = scheduleData[0];
+    // const event: EventData = scheduleData[0];
 
     const customBoxShadow = {
         boxShadow: '5px 5px 5px 5px #C4C4C4', // 3px offset, 3px blur, 3px spread, 10px size, gray color
