@@ -5,7 +5,7 @@
 
 const TechFocused = () => {
     return (
-        <div className="relative bg-white pt-[160px] p-16">
+        <div id="techfocused" className="relative bg-white pt-[160px] p-16">
 
             <img src="images/background/circle.svg" className="absolute top-[300px] left-[250px] h-5 w-5" />
             <img src="images/background/triangle.svg" className="absolute top-[180px] left-[650px] h-7 w-7" />
