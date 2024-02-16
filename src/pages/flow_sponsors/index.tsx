@@ -154,7 +154,7 @@ const FlowSponsors: React.FC = () => {
     const colors = ['#FF0000', '#0F9D58', '#4285F4', '#F6C02A'];
     return (
         <>
-         <div className='bg-white'>
+         <div id='schedule' className='bg-white pt-8 ' >
             <div className="text-center bg-ecf0f3">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold" style={{ color: 'black' }}>
                     Event Flow
