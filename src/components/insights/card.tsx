@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface CardProps {
     value:string;
     description:string;
