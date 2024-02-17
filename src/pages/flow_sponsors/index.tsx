@@ -148,9 +148,9 @@ const FlowSponsors: React.FC = () => {
     const customBoxShadow = {
         boxShadow: '5px 5px 5px 5px #C4C4C4', // 3px offset, 3px blur, 3px spread, 10px size, gray color
     };
-    const eventflowBoxShadow = {
-        boxShadow: '5px 5px 5px 5px #C4C4C4', // 3px offset, 3px blur, 3px spread, 10px size, gray color
-    };
+    // const eventflowBoxShadow = {
+    //     boxShadow: '5px 5px 5px 5px #C4C4C4', // 3px offset, 3px blur, 3px spread, 10px size, gray color
+    // };
     const colors = ['#FF0000', '#0F9D58', '#4285F4', '#F6C02A'];
     return (
         <>
