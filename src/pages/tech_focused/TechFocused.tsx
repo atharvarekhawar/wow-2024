@@ -24,7 +24,7 @@ const TechFocused = () => {
 
                 <p className="text-center mt-4 text-lg md:text-2xl md:w-3/4">The sessions that span from technical to visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.</p>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 gap-y-[6rem] items-center mt-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 gap-y-[4rem] items-center mt-8">
                     <a href="https://developer.android.com/" className="w-[129px] h-[129px] md:h-39 bg-cover bg-center" style={{ backgroundImage: `url("https://io.google/2022/app/images/android-logo.svg")` }}></a>
                     <a href="https://chromeos.dev/en" className="w-[129px] h-[129px] md:h-39 bg-cover bg-center" style={{ backgroundImage: `url("https://io.google/2022/app/images/chrome-logo.svg")` }}></a>
                     <a href="https://firebase.google.com/" className="w-[129px] h-[129px] md:h-39 bg-cover bg-center" style={{ backgroundImage: `url("https://io.google/2022/app/images/firebase-logo.svg")` }}></a>
