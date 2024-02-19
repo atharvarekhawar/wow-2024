@@ -1,12 +1,12 @@
 import Carroussel from './Carroussel';
-import {v4 as uuidv4} from "uuid"
+import { v4 as uuidv4 } from "uuid"
 
-export function Card(){
+export function Card() {
 
   // <div className="w-[500px] h-[280px] rounded-2xl border-black border shadow-[30px_30px_30px_-15px_rgba(0,0,0,0.3)] z-10"></div>
 
   return (
-      <div className="md:w-[500px] md:h-[280px] w-[300px] h-[180px] rounded-2xl border-black border shadow-[30px_30px_30px_-15px_rgba(0,0,0,0.3)]"></div>
+    <div className="md:w-[500px] md:h-[280px] w-[300px] h-[180px] rounded-2xl border-black border shadow-[30px_30px_30px_-15px_rgba(0,0,0,0.3)]"></div>
   );
 }
 
@@ -16,36 +16,36 @@ export default function WeAreExpecting() {
   const slides = [
     {
       key: uuidv4(),
-      content: <Card/>
+      content: <Card />
     },
     {
       key: uuidv4(),
-      content: <Card/>
+      content: <Card />
     },
     {
       key: uuidv4(),
-      content: <Card/>
+      content: <Card />
     },
     {
       key: uuidv4(),
-      content: <Card/>
+      content: <Card />
     },
     {
       key: uuidv4(),
-      content: <Card/>
+      content: <Card />
     },
     {
       key: uuidv4(),
-      content: <Card/>
+      content: <Card />
     }
-    
+
   ];
 
   return (
     <div className="relative w-[100vw] bg-white overflow-hidden">
-        
+
       {/* background shapes */}
-      <img src="images/background/circle.svg" className="absolute top-[100px] left-[250px] h-5 w-5"/>
+      <img src="images/background/circle.svg" className="absolute top-[100px] left-[250px] h-5 w-5" />
       <img src="images/background/triangle.svg" className="absolute top-[20px] left-[650px] h-7 w-7" />
       <img src="images/background/rectangle.svg" className="absolute top-[50px] left-[1200px] h-12 w-12" />
       <img src="images/background/circle.svg" className="absolute top-[280px] left-[1550px] h-5 w-5" />
@@ -69,7 +69,7 @@ export default function WeAreExpecting() {
 
       </div>
 
-      <p className="md:text-4xl text-xl text-center text-[#545454] mt-16">Things you don't want to miss! </p>👀
+      <p className="md:text-4xl text-xl text-center text-[#545454] mt-16">Things you don't want to miss! </p>
 
 
       <div className='w-[100%] h-[400px] z-2'>
