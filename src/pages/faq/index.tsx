@@ -9,33 +9,38 @@ interface FaqData {
 const Faq: React.FC = () => {
   const faqData: FaqData[] = [
     {
-      question: 'What is React?',
-      answer: 'React is a JavaScript library for building user interfaces.',
+      question: 'When is GDSC WOW Pune happening?',
+      answer: 'GDSC WOW Pune is scheduled to take place on ##. So do mark your calendars ;)',
     },
     {
-      question: 'How can I install React?',
-      answer: 'You can install React using npm or yarn. For example: npm install react',
+      question: 'Who can participate in GDSC WOW Pune?',
+      answer: 'GDSC WOW Pune welcomes students, developers, tech enthusiasts, and anyone passionate about technology. All are invited to join this collaborative celebration!',
     },
     {
-      question: 'Is React easy to learn?',
-      answer: 'Yes, React has a relatively gentle learning curve and is widely used in the industry.',
+      question: 'What kind of activities can I expect at GDSC WOW Pune?',
+      answer: 'GDSC WOW Pune promises a wide range of activities, including lightning talks by industry experts, networking sessions, and lot more!. ',
     },
     {
-      question: 'What are React components?',
-      answer: 'React components are reusable, self-contained building blocks for a user interface.',
+      question: 'I am a beginner in programming, can I still register?',
+      answer: 'Absolutely yes! GDSC WOW Pune is designed for all levels of expertise. On the other hand, GDSC WOW is an excellent opportunity to get to know about the latest technologies if you are just starting',
     },
     {
-      question: 'How do I pass data between components in React?',
-      answer: 'Data can be passed between components using props or by using a state management library.',
+      question: 'What will attendees get by participating in the event?',
+      answer: 'By participating in GDSC WOW Pune, attendees gain valuable insights from industry leaders, enhance their networking opportunities, and win some cool GDSC merchandise',
     },
     {
-      question: 'Can I use React with TypeScript?',
-      answer: 'Yes, React has great support for TypeScript, and many projects use them together.',
+      question: 'Is it mandatory to register to participate in the event?',
+      answer: 'Yes. Each individual may register for only one ticket.',
     },
     {
-      question: 'What is JSX?',
-      answer: 'JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is used with React to describe what the UI should look like.',
+      question: 'Where can I receive updates about WOW?',
+      answer: 'Follow our social media handles for the latest first hand updates.'
     },
+    {
+      question: 'How can I get involved with GDSC beyond GDSC WOW?',
+      answer: 'Follow our socials and join the WOW community: link'
+    },
+
     // Add more FAQ items as needed
   ];
 
