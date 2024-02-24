@@ -21,12 +21,24 @@ const Faq: React.FC = () => {
       answer: 'GDSC WOW Pune promises a wide range of activities, including lightning talks by industry experts, networking sessions, and lot more!. ',
     },
     {
-      question: ' I am a beginner in programming, can I still register?',
+      question: 'I am a beginner in programming, can I still register?',
       answer: 'Absolutely yes! GDSC WOW Pune is designed for all levels of expertise. On the other hand, GDSC WOW is an excellent opportunity to get to know about the latest technologies if you are just starting',
     },
     {
-      question: ' What will attendees get by participating in the event?',
+      question: 'What will attendees get by participating in the event?',
       answer: 'By participating in GDSC WOW Pune, attendees gain valuable insights from industry leaders, enhance their networking opportunities, and win some cool GDSC merchandise',
+    },
+    {
+      question: 'Is it mandatory to register to participate in the event?',
+      answer: 'Yes. Each individual may register for only one ticket.',
+    },
+    {
+      question: 'Where can I receive updates about WOW?',
+      answer: 'Follow our social media handles for the latest first hand updates.'
+    },
+    {
+      question: 'How can I get involved with GDSC beyond GDSC WOW?',
+      answer: 'Follow our socials and join the WOW community: link'
     },
 
     // Add more FAQ items as needed
