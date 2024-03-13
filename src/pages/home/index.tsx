@@ -1,6 +1,14 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-function Home(){
+function Home() {
+     const openGoogleForm = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSd8yoyPmL2vNqCruROnfa-LN3aLhwck3lUhmPoFVO41cWBMkw/viewform?usp=pp_url', '_blank');
+     };
+      const sponsorCall = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfm80H8Gz8G1Uk2AzO9MINDCZzuKQZGbr5B6YptZquxlgzQGA/viewform?usp=sf_link', '_blank');
+  };
+
+
     return (
         <div id="home" className="w-[100vw] h-[100vh] bg-[radial-gradient(ellipse_at_center,rgba(255,175,82,1.00)_0%,rgba(255,255,255,1.00)_100%)]">
             <div className="w-[100vw] h-[100vh] bg-[url('/images/home/bg.png')] bg-fixed bg-cover bg-center bg-no-repeat relative">
@@ -33,10 +41,10 @@ function Home(){
                        </div>
                        <div className="w-fit mx-auto flex gap-4 cursor-pointer text-base text-white font-semibold">
                           <button className='w-fit py-2 px-3 bg-[#4C8BF5] rounded hover:scale-105 transition'>
-                              <a href=''>Apply for sponsorships</a>
+                              <a href='' onClick={sponsorCall}>Apply for sponsorships</a>
                           </button>
                           <button className='w-fit py-2 px-3 bg-[#DD4B35] rounded hover:scale-105 transition'>
-                              <a href=''>Apply for speaker sessions</a>
+                              <a href='' onClick={openGoogleForm}>Apply for speaker sessions</a>
                           </button>
                        </div>
                     </ParallaxLayer>
